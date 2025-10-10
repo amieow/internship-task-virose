@@ -1,0 +1,10 @@
+^D:\CMAKE_JSON\NEW2\BUILD\CMAKEFILES\52C7FC067BA1582FF3EC4B7EC7FD2791\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/CMAKE_JSON/new2 -BD:/CMAKE_JSON/new2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/CMAKE_JSON/new2/build/RobotConfig.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
